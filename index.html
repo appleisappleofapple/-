@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+    시발 
+    자동차
+    <div id = "num"></div>
+    <div id = "banana"></div>
+    <button id="btn" onclick="count()">시발 자동차</button>
+
+    </body>
+</html>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+  body {
+    font-family: 'East Sea Dokdo', sans-serif;
+    font-size: 50px;
+  }
+
+  #btn {
+    background-color: violet;
+    width: 100px;
+    height: 50px;
+  }
+
+</style>
+<script>
+    let number = 0;
+
+    function count() {
+        number ++;
+        document.getElementById('num').innerText = number
+    }
+
+    document.getElementById('banana').innerText = ('b' + 'a' + + 'a' + 'a').toLowerCase();
+</script>
